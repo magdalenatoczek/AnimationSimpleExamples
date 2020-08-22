@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA118C5324F0F9A0001661BA /* PickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA118C5224F0F9A0001661BA /* PickerData.swift */; };
+		AA50D16424F1460100303BCC /* AnimationWithDurationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50D16324F1460100303BCC /* AnimationWithDurationVC.swift */; };
+		AA68718524F1099400F4257E /* notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA68718424F1099400F4257E /* notes.swift */; };
+		AA68718724F119E300F4257E /* GradientStandaloneLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA68718624F119E300F4257E /* GradientStandaloneLayerVC.swift */; };
 		AA91FFC524F03711000310FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA91FFC424F03711000310FA /* AppDelegate.swift */; };
 		AA91FFC724F03711000310FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA91FFC624F03711000310FA /* SceneDelegate.swift */; };
 		AA91FFC924F03711000310FA /* MainPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA91FFC824F03711000310FA /* MainPickerViewController.swift */; };
 		AA91FFCC24F03711000310FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA91FFCA24F03711000310FA /* Main.storyboard */; };
 		AA91FFCE24F03713000310FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA91FFCD24F03713000310FA /* Assets.xcassets */; };
 		AA91FFD124F03713000310FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA91FFCF24F03713000310FA /* LaunchScreen.storyboard */; };
+		AAB88B9E24F1028500A86277 /* GradientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB88B9D24F1028500A86277 /* GradientVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA118C5224F0F9A0001661BA /* PickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerData.swift; sourceTree = "<group>"; };
+		AA50D16324F1460100303BCC /* AnimationWithDurationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationWithDurationVC.swift; sourceTree = "<group>"; };
+		AA68718424F1099400F4257E /* notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notes.swift; sourceTree = "<group>"; };
+		AA68718624F119E300F4257E /* GradientStandaloneLayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientStandaloneLayerVC.swift; sourceTree = "<group>"; };
 		AA91FFC124F03711000310FA /* AnimationAndDrawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationAndDrawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA91FFC424F03711000310FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA91FFC624F03711000310FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,7 @@
 		AA91FFCD24F03713000310FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA91FFD024F03713000310FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA91FFD224F03713000310FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAB88B9D24F1028500A86277 /* GradientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA118C5424F0F9B3001661BA /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				AA118C5224F0F9A0001661BA /* PickerData.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		AA68718124F1075000F4257E /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
 		AA91FFB824F03711000310FA = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +81,45 @@
 		AA91FFC324F03711000310FA /* AnimationAndDrawing */ = {
 			isa = PBXGroup;
 			children = (
+				AA68718424F1099400F4257E /* notes.swift */,
+				AAB88BA024F1029100A86277 /* Model */,
+				AAB88B9F24F1028B00A86277 /* View */,
+				AAB88B9C24F1026800A86277 /* Controller */,
+				AA118C5424F0F9B3001661BA /* Enums */,
 				AA91FFC424F03711000310FA /* AppDelegate.swift */,
 				AA91FFC624F03711000310FA /* SceneDelegate.swift */,
-				AA91FFC824F03711000310FA /* MainPickerViewController.swift */,
 				AA91FFCA24F03711000310FA /* Main.storyboard */,
 				AA91FFCD24F03713000310FA /* Assets.xcassets */,
 				AA91FFCF24F03713000310FA /* LaunchScreen.storyboard */,
 				AA91FFD224F03713000310FA /* Info.plist */,
 			);
 			path = AnimationAndDrawing;
+			sourceTree = "<group>";
+		};
+		AAB88B9C24F1026800A86277 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AA91FFC824F03711000310FA /* MainPickerViewController.swift */,
+				AAB88B9D24F1028500A86277 /* GradientVC.swift */,
+				AA68718624F119E300F4257E /* GradientStandaloneLayerVC.swift */,
+				AA50D16324F1460100303BCC /* AnimationWithDurationVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AAB88B9F24F1028B00A86277 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA68718124F1075000F4257E /* Gradient */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AAB88BA024F1029100A86277 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA68718724F119E300F4257E /* GradientStandaloneLayerVC.swift in Sources */,
 				AA91FFC924F03711000310FA /* MainPickerViewController.swift in Sources */,
+				AA118C5324F0F9A0001661BA /* PickerData.swift in Sources */,
+				AA50D16424F1460100303BCC /* AnimationWithDurationVC.swift in Sources */,
 				AA91FFC524F03711000310FA /* AppDelegate.swift in Sources */,
+				AA68718524F1099400F4257E /* notes.swift in Sources */,
+				AAB88B9E24F1028500A86277 /* GradientVC.swift in Sources */,
 				AA91FFC724F03711000310FA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
