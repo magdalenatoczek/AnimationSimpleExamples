@@ -20,6 +20,7 @@ class AnimationWithDurationVC: UIViewController {
     
     let sizeChangeUp : CGFloat = 2
     let sizeChangeDown: CGFloat = 0.60
+    var startAngle : CGFloat = .pi/180
     
     
     
@@ -45,16 +46,39 @@ class AnimationWithDurationVC: UIViewController {
     
     
     @IBAction func rotateButtonClicked(_ sender: Any) {
+        
+        startAngle = startAngle * 20
+        
+        
+              UIView.animate(withDuration: 2) {
+                
+                self.viewToAnimate.transform = CGAffineTransform.init(rotationAngle: self.startAngle )
+
+              }
+              
+        
     }
     
     
     
     @IBAction func changeColorButtonClicked(_ sender: Any) {
+        
+        UIView.animate(withDuration: 2) {
+            self.viewToAnimate.layer.cornerRadius = 20.0
+            self.viewToAnimate.layer.backgroundColor = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
+        }
+        
     }
     
     
     
     @IBAction func opacityButtonClicked(_ sender: Any) {
+        
+        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 7, options: .curveEaseOut, animations: {
+            self.viewToAnimate.layer.opacity = 0.5
+        }) { (finish) in
+            self.viewToAnimate.layer.opacity = 1.0
+        }
         
     }
     
@@ -64,6 +88,7 @@ class AnimationWithDurationVC: UIViewController {
     @IBAction func chainMoveClicked(_ sender: Any) {
         
         UIView.animate(withDuration: 0.5, animations: {
+            self.viewToAnimate.transform = CGAffineTransform.init(rotationAngle: 0)
             self.moveUp()
         }) { success in
                     UIView.animate(withDuration: 0.5, animations: {
@@ -90,7 +115,9 @@ class AnimationWithDurationVC: UIViewController {
     @IBAction func chainWithOptionsWasClicked(_ sender: Any) {
         
         UIView.animate(withDuration: 2, delay: 0, options: .curveEaseIn , animations: {
+            self.viewToAnimate.transform = CGAffineTransform.init(rotationAngle: 0)
             self.moveUp()
+            
         }) { success in
                       UIView.animate(withDuration: 2, delay: 0, options: .curveEaseOut , animations: {
                         self.moveRight()
@@ -118,8 +145,12 @@ class AnimationWithDurationVC: UIViewController {
     @IBAction func chainWithSpringClicked(_ sender: Any) {
         
         
+       
+        
         UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 4, options: .curveEaseIn,
-                       animations: { self.moveUp()
+                       animations: {
+                         self.viewToAnimate.transform = CGAffineTransform.init(rotationAngle: 0)
+                        self.moveUp()
                }) { success in
                               
                 UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6, options: .curveEaseOut,
@@ -186,8 +217,12 @@ class AnimationWithDurationVC: UIViewController {
     @IBAction func resetPressed(_ sender: Any) {
         
          UIView.animate(withDuration: 1.5) {
-
+               self.viewToAnimate.transform = CGAffineTransform.init(rotationAngle: 0)
             self.viewToAnimate.layer.frame = CGRect(x: self.startPositionX, y: self.startPositionY, width: self.startWidth, height: self.startHeigth)
+            self.viewToAnimate.layer.opacity = 1.0
+             self.viewToAnimate.layer.cornerRadius = 0.0
+            self.viewToAnimate.layer.backgroundColor = #colorLiteral(red: 1, green: 0.3557812257, blue: 0.2406072935, alpha: 1)
+         
         }
     }
     

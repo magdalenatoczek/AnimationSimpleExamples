@@ -22,10 +22,6 @@ class GradientStandaloneLayerVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
-       var lot =  view.safeAreaInsets
-       print(lot)
         
         
       self.additionalSafeAreaInsets = UIEdgeInsets(top: -20.0, left: 0.0, bottom: 0.0, right: 0.0)
