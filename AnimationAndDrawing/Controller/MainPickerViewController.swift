@@ -53,6 +53,15 @@ class MainPickerViewController: UIViewController, UIPickerViewDelegate, UIPicker
                              present(vc, animated: true, completion: nil)
                              break
             
+            
+            
+            case PickerData.propertyAnimations.rawValue:
+                    let vc = storyboard?.instantiateViewController(withIdentifier: "PropertyAnimationsVC") as! PropertyAnimationsVC
+                             vc.modalPresentationStyle = .fullScreen
+                             present(vc, animated: true, completion: nil)
+                             break
+            
+            
             case PickerData.gradientStandaloneLayer.rawValue:
                     let vc = storyboard?.instantiateViewController(withIdentifier: "GradientStandaloneLayerVC") as! GradientStandaloneLayerVC
                             vc.modalPresentationStyle = .fullScreen

@@ -88,7 +88,7 @@ class AnimationWithDurationVC: UIViewController {
     @IBAction func chainMoveClicked(_ sender: Any) {
         
         UIView.animate(withDuration: 0.5, animations: {
-            self.viewToAnimate.transform = CGAffineTransform.init(rotationAngle: 0)
+            self.viewToAnimate.transform = CGAffineTransform.identity
             self.moveUp()
         }) { success in
                     UIView.animate(withDuration: 0.5, animations: {
@@ -115,7 +115,7 @@ class AnimationWithDurationVC: UIViewController {
     @IBAction func chainWithOptionsWasClicked(_ sender: Any) {
         
         UIView.animate(withDuration: 2, delay: 0, options: .curveEaseIn , animations: {
-            self.viewToAnimate.transform = CGAffineTransform.init(rotationAngle: 0)
+            self.viewToAnimate.transform = CGAffineTransform.identity
             self.moveUp()
             
         }) { success in
@@ -149,7 +149,7 @@ class AnimationWithDurationVC: UIViewController {
         
         UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 4, options: .curveEaseIn,
                        animations: {
-                         self.viewToAnimate.transform = CGAffineTransform.init(rotationAngle: 0)
+                         self.viewToAnimate.transform = CGAffineTransform.identity
                         self.moveUp()
                }) { success in
                               
@@ -217,7 +217,7 @@ class AnimationWithDurationVC: UIViewController {
     @IBAction func resetPressed(_ sender: Any) {
         
          UIView.animate(withDuration: 1.5) {
-               self.viewToAnimate.transform = CGAffineTransform.init(rotationAngle: 0)
+               self.viewToAnimate.transform = CGAffineTransform.identity
             self.viewToAnimate.layer.frame = CGRect(x: self.startPositionX, y: self.startPositionY, width: self.startWidth, height: self.startHeigth)
             self.viewToAnimate.layer.opacity = 1.0
              self.viewToAnimate.layer.cornerRadius = 0.0
