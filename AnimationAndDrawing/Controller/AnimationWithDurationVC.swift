@@ -8,6 +8,12 @@
 
 import UIKit
 
+
+// implicit animation - handle how a view should animate to a new property.
+// (alpha, frame ios is making it into the layer for us)
+// model layer(in progress hiden), presentation layer(in progress visible) after animation
+// changed property will be in the new state after animaion finish
+
 class AnimationWithDurationVC: UIViewController {
 
     @IBOutlet weak var viewToAnimate: UIView!
@@ -22,7 +28,7 @@ class AnimationWithDurationVC: UIViewController {
     let sizeChangeDown: CGFloat = 0.60
     var startAngle : CGFloat = .pi/180
     
-    
+ //   var  viewToAnimateOnlyInCode : UIView!
     
     
    
@@ -36,9 +42,15 @@ class AnimationWithDurationVC: UIViewController {
         startWidth = viewToAnimate.layer.frame.size.width
         startHeigth = viewToAnimate.layer.frame.size.height
         
-        viewToAnimate.translatesAutoresizingMaskIntoConstraints = true
+        viewToAnimate.translatesAutoresizingMaskIntoConstraints = true //there is a constraints conflict.
         
-       
+        
+        
+        
+        // in code there is no constrants conflict where moving -
+//        viewToAnimateOnlyInCode = UIView(frame :CGRect(x: startPositionX, y: startPositionY, width: startWidth, height: startHeigth))
+//        viewToAnimateOnlyInCode.backgroundColor = UIColor.blue
+//        view.addSubview(viewToAnimateOnlyInCode)
 
    
     }
@@ -277,6 +289,7 @@ class AnimationWithDurationVC: UIViewController {
     func moveUp(){
         
         self.viewToAnimate.frame.origin = CGPoint(x: self.viewToAnimate.frame.origin.x, y: 0)
+       
         
         
     }
@@ -284,18 +297,18 @@ class AnimationWithDurationVC: UIViewController {
     func moveRight(){
         
         self.viewToAnimate.frame.origin = CGPoint(x: self.view.frame.width - self.viewToAnimate.frame.width, y: self.viewToAnimate.frame.origin.y)
-        
+      
     }
     
     func moveDown(){
         self.viewToAnimate.frame.origin = CGPoint(x: self.viewToAnimate.frame.origin.x,  y: self.view.frame.height - self.viewToAnimate.frame.height)
-           
+        
     
     }
     
     func moveLeft(){
         self.viewToAnimate.frame.origin = CGPoint(x: 0,  y:self.viewToAnimate.frame.origin.y)
-        
+       
     }
     
 

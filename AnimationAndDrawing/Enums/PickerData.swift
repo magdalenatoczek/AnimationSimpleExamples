@@ -15,9 +15,11 @@ enum PickerData : String {
     case animationWithDuration = "Animation with Duration"
     case gradientStandaloneLayer = "Gradient Standalone Layer"
     case propertyAnimations = "Property Animations"
+    case caBasicAnimations = "CABasicAnimations"
+    case caKeyFrameAnimations = "CAKeyFrameAnimations"
     
     
-    static let allCasesTab = [animationWithDuration.rawValue,propertyAnimations.rawValue, gradientStandaloneLayer.rawValue]
+    static let allCasesTab = [animationWithDuration.rawValue,propertyAnimations.rawValue, gradientStandaloneLayer.rawValue, caBasicAnimations.rawValue, caKeyFrameAnimations.rawValue]
     
     
 }

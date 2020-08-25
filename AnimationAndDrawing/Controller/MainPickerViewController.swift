@@ -67,6 +67,18 @@ class MainPickerViewController: UIViewController, UIPickerViewDelegate, UIPicker
                             vc.modalPresentationStyle = .fullScreen
                             present(vc, animated: true, completion: nil)
                             break
+            
+            case PickerData.caBasicAnimations.rawValue:
+                            let vc = storyboard?.instantiateViewController(withIdentifier: "CABasicAnimationsVC") as! CABasicAnimationsVC
+                                    vc.modalPresentationStyle = .fullScreen
+                                    present(vc, animated: true, completion: nil)
+                                    break
+            
+            case PickerData.caKeyFrameAnimations.rawValue:
+                            let vc = storyboard?.instantiateViewController(withIdentifier: "CAKeyFrameAnimationsVC") as! CAKeyFrameAnimationsVC
+                                    vc.modalPresentationStyle = .fullScreen
+                                    present(vc, animated: true, completion: nil)
+                                    break
         default:
             break
  

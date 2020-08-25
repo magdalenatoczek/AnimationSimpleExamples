@@ -18,6 +18,8 @@
 		AA91FFCE24F03713000310FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA91FFCD24F03713000310FA /* Assets.xcassets */; };
 		AA91FFD124F03713000310FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA91FFCF24F03713000310FA /* LaunchScreen.storyboard */; };
 		AAADC1A524F404C300B62136 /* PropertyAnimationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAADC1A424F404C300B62136 /* PropertyAnimationsVC.swift */; };
+		AAADC1A724F54DAE00B62136 /* CABasicAnimationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAADC1A624F54DAE00B62136 /* CABasicAnimationsVC.swift */; };
+		AAADC1A924F54DC200B62136 /* CAKeyFrameAnimationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAADC1A824F54DC200B62136 /* CAKeyFrameAnimationsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		AA91FFD024F03713000310FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA91FFD224F03713000310FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAADC1A424F404C300B62136 /* PropertyAnimationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnimationsVC.swift; sourceTree = "<group>"; };
+		AAADC1A624F54DAE00B62136 /* CABasicAnimationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CABasicAnimationsVC.swift; sourceTree = "<group>"; };
+		AAADC1A824F54DC200B62136 /* CAKeyFrameAnimationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAKeyFrameAnimationsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,13 +57,6 @@
 				AA118C5224F0F9A0001661BA /* PickerData.swift */,
 			);
 			path = Enums;
-			sourceTree = "<group>";
-		};
-		AA68718124F1075000F4257E /* Gradient */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Gradient;
 			sourceTree = "<group>";
 		};
 		AA91FFB824F03711000310FA = {
@@ -103,6 +100,8 @@
 				AA68718624F119E300F4257E /* GradientStandaloneLayerVC.swift */,
 				AA50D16324F1460100303BCC /* AnimationWithDurationVC.swift */,
 				AAADC1A424F404C300B62136 /* PropertyAnimationsVC.swift */,
+				AAADC1A624F54DAE00B62136 /* CABasicAnimationsVC.swift */,
+				AAADC1A824F54DC200B62136 /* CAKeyFrameAnimationsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -110,7 +109,6 @@
 		AAB88B9F24F1028B00A86277 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AA68718124F1075000F4257E /* Gradient */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,10 +193,12 @@
 			files = (
 				AA68718724F119E300F4257E /* GradientStandaloneLayerVC.swift in Sources */,
 				AA91FFC924F03711000310FA /* MainPickerViewController.swift in Sources */,
+				AAADC1A724F54DAE00B62136 /* CABasicAnimationsVC.swift in Sources */,
 				AA118C5324F0F9A0001661BA /* PickerData.swift in Sources */,
 				AA50D16424F1460100303BCC /* AnimationWithDurationVC.swift in Sources */,
 				AA91FFC524F03711000310FA /* AppDelegate.swift in Sources */,
 				AA68718524F1099400F4257E /* notes.swift in Sources */,
+				AAADC1A924F54DC200B62136 /* CAKeyFrameAnimationsVC.swift in Sources */,
 				AAADC1A524F404C300B62136 /* PropertyAnimationsVC.swift in Sources */,
 				AA91FFC724F03711000310FA /* SceneDelegate.swift in Sources */,
 			);

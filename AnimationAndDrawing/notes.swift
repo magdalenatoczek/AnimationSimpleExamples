@@ -10,6 +10,10 @@ import Foundation
 import UIKit
 
 
+//using an additional layer  => implement viewDidLayoutSubviews() 
+
+
+
 class ExampleClassForNotes: UIViewController {
     
     

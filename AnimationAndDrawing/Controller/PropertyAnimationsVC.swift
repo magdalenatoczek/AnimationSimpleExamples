@@ -8,6 +8,9 @@
 
 import UIKit
 
+
+
+
 class PropertyAnimationsVC: UIViewController {
     
     var animator : UIViewPropertyAnimator!
@@ -84,7 +87,7 @@ class PropertyAnimationsVC: UIViewController {
             
             
         case .stopped:
-            animator.finishAnimation(at: .end)
+            animator.finishAnimation(at: .current)
            // animator.finishAnimation(at: .end)
            // animator.finishAnimation(at: .start)
             
@@ -115,7 +118,7 @@ class PropertyAnimationsVC: UIViewController {
  
        // animator.stopAnimation(true)  // important : enter into .inactive state
         
-        animator.stopAnimation(false)  // important : enter into .stop state
+        animator.stopAnimation(false)  // important : enter into .stopped state
     }
     
    
