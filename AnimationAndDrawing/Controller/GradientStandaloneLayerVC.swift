@@ -94,6 +94,7 @@ class GradientStandaloneLayerVC: UIViewController, CAAnimationDelegate {
                animation.toValue = gradients[currentSetOfGradient]
                
                gradientLayer.setValue(currentSetOfGradient, forKey: "colorShouldChange")
+                gradientLayer.colors = gradients[currentSetOfGradient]
              
                animation.delegate = self
                gradientLayer.add(animation, forKey: nil)
@@ -109,11 +110,8 @@ class GradientStandaloneLayerVC: UIViewController, CAAnimationDelegate {
         
         if flag{
             
-            if let colorShouldChange = gradientLayer.value(forKey: "colorShouldChange") as? Int {
-                gradientLayer.drawsAsynchronously = true
-                gradientLayer.colors = gradients[colorShouldChange]
+            if let _ = gradientLayer.value(forKey: "colorShouldChange") as? Int {
                
-                
                 animateGradient()
   
 
