@@ -15,30 +15,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPw-Aq-ppb">
-                                <rect key="frame" x="47" y="260" width="320" height="216"/>
-                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Meh-ZC-xcr">
-                                <rect key="frame" x="192" y="521" width="30" height="32"/>
+                                <rect key="frame" x="187" y="482" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="K3T-lz-6C3"/>
+                                    <constraint firstAttribute="height" constant="40" id="TOF-OG-H65"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Go"/>
                                 <connections>
                                     <action selector="goButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNH-GO-WTI"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5nc-KA-suW">
+                                <rect key="frame" x="0.0" y="200" width="414" height="216"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hPw-Aq-ppb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NDS-l7-NxR"/>
                             <constraint firstItem="Meh-ZC-xcr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wzw-Yl-YIs"/>
-                            <constraint firstItem="hPw-Aq-ppb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="swa-6q-lHc"/>
-                            <constraint firstItem="Meh-ZC-xcr" firstAttribute="top" secondItem="hPw-Aq-ppb" secondAttribute="bottom" constant="45" id="zuy-Mx-jF8"/>
+                            <constraint firstItem="5nc-KA-suW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xjk-M2-KUS"/>
+                            <constraint firstItem="5nc-KA-suW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="bkz-0x-83q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5nc-KA-suW" secondAttribute="trailing" id="f8p-YQ-9gg"/>
+                            <constraint firstItem="Meh-ZC-xcr" firstAttribute="top" secondItem="5nc-KA-suW" secondAttribute="bottom" constant="66" id="q4Q-xm-CYT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="goBtn" destination="Meh-ZC-xcr" id="yct-4i-J8u"/>
-                        <outlet property="picker" destination="hPw-Aq-ppb" id="im8-Yi-zpg"/>
+                        <outlet property="picker" destination="5nc-KA-suW" id="8Y8-GR-BwH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -218,8 +224,18 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I02-SC-16X">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uU-IM-ah9">
+                                <rect key="frame" x="140" y="654" width="134" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Animate Gradient">
+                                    <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="animateGradientButtonPressed:" destination="QJ3-qE-tGx" eventType="touchUpInside" id="I2x-pD-VJP"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMo-xl-C1Q">
                                 <rect key="frame" x="20" y="40" width="21" height="22"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -236,7 +252,9 @@
                             <constraint firstItem="jey-M8-hYw" firstAttribute="bottom" secondItem="I02-SC-16X" secondAttribute="bottom" id="F0z-3n-91w"/>
                             <constraint firstItem="uMo-xl-C1Q" firstAttribute="leading" secondItem="jey-M8-hYw" secondAttribute="leading" constant="20" id="QR3-Yr-eWf"/>
                             <constraint firstItem="I02-SC-16X" firstAttribute="leading" secondItem="jey-M8-hYw" secondAttribute="leading" id="SYq-VG-bIa"/>
+                            <constraint firstItem="jey-M8-hYw" firstAttribute="bottom" secondItem="3uU-IM-ah9" secondAttribute="bottom" constant="50" id="m7O-JU-7oN"/>
                             <constraint firstItem="I02-SC-16X" firstAttribute="top" secondItem="jey-M8-hYw" secondAttribute="top" id="y1T-qJ-Uzt"/>
+                            <constraint firstItem="3uU-IM-ah9" firstAttribute="centerX" secondItem="D9D-nV-pyM" secondAttribute="centerX" id="zrN-lh-Tt7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jey-M8-hYw"/>
                     </view>
