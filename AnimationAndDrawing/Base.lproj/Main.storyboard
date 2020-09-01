@@ -414,14 +414,30 @@
                                     <action selector="backButtonPressed:" destination="bcs-NO-JxX" eventType="touchUpInside" id="kzL-mj-fkE"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XRW-iB-qll">
+                                <rect key="frame" x="107" y="343" width="200" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Wk8-Zd-hLc"/>
+                                    <constraint firstAttribute="height" constant="50" id="ys3-6Y-GiF"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Z5J-AO-Gyw" firstAttribute="leading" secondItem="0XL-sV-15J" secondAttribute="leading" constant="20" id="4Oa-Ta-n6T"/>
+                            <constraint firstItem="XRW-iB-qll" firstAttribute="centerX" secondItem="YmZ-Te-Nek" secondAttribute="centerX" id="kmd-LT-8Ds"/>
                             <constraint firstItem="Z5J-AO-Gyw" firstAttribute="top" secondItem="0XL-sV-15J" secondAttribute="top" constant="20" id="sBQ-fc-ShJ"/>
+                            <constraint firstItem="XRW-iB-qll" firstAttribute="centerY" secondItem="YmZ-Te-Nek" secondAttribute="centerY" id="y7g-Ql-k9O"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0XL-sV-15J"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="XRW-iB-qll" id="PrJ-sb-4s3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihn-bA-5ct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

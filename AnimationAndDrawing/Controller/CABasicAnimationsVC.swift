@@ -59,7 +59,7 @@ class CABasicAnimationsVC: UIViewController {
         
         basicAnimation.duration = 3.0
         
-        basicAnimation.beginTime = CACurrentMediaTime() + 1.0 //delay
+      //  basicAnimation.beginTime = CACurrentMediaTime() + 1.0 //delay
         
         
         
@@ -71,7 +71,7 @@ class CABasicAnimationsVC: UIViewController {
         
         viewToAnimate.layer.setValue("anim1", forKey: "key1")
         
-           //  viewToAnimate.layer.add(basicAnimation, forKey: "myKey")
+        viewToAnimate.layer.add(basicAnimation, forKey: "myKey")
         
  
 

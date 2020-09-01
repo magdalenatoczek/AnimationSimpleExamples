@@ -13,10 +13,10 @@ enum PickerData : String {
     
    
     case animationWithDuration = "Animation with Duration"
-    case gradientStandaloneLayer = "Gradient with Animation"
+    case gradientStandaloneLayer = "Gradient -CABasicAnimation"
     case propertyAnimations = "Property Animations"
     case caBasicAnimations = "CABasicAnimations"
-    case caKeyFrameAnimations = "CAKeyFrameAnimations"
+    case caKeyFrameAnimations = "Shake CAKeyFrameAnimations"
     
 
     
