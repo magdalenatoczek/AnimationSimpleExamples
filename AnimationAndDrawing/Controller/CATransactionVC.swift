@@ -28,8 +28,8 @@ class CATransactionVC: UIViewController {
         view.addSubview(newView)
         newView.frame = CGRect(x: 100, y: 100, width: 50, height: 50)
         newView.layer.addSublayer(newLayer)
-        
-        newLayer.backgroundColor = UIColor.black.cgColor
+        newView.backgroundColor = UIColor.black
+      //  newLayer.backgroundColor = UIColor.black.cgColor
       
     }
     
@@ -53,10 +53,10 @@ class CATransactionVC: UIViewController {
         
         
         CATransaction.setCompletionBlock {
-            //alternative for delegats when mix animation
-            //what should happen with modal version afer animation is stopped
             
-         //   self.newLayer.backgroundColor = UIColor.blue.cgColor
+            self.newView.layer.position = CGPoint(x: 200, y: 200)
+            self.newView.layer.cornerRadius = self.newView.layer.frame.width/2
+            
         }
 
         CATransaction.setAnimationDuration(2)
@@ -64,8 +64,28 @@ class CATransactionVC: UIViewController {
         let timingFunc = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
         CATransaction.setAnimationTimingFunction(timingFunc)
         
-        newLayer.backgroundColor = UIColor.orange.cgColor
-        newLayer.position = CGPoint(x: 200, y: 200)
+        
+        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 8, options:.curveEaseIn, animations: {
+            self.newView.backgroundColor = UIColor.orange
+            
+            
+        }, completion: nil)
+        
+
+        let positionXAnimation = CABasicAnimation(keyPath: "position.x")
+        positionXAnimation.toValue = 200
+        
+        let positionYAnimation = CABasicAnimation(keyPath: "position.y")
+               positionYAnimation.toValue = 200
+        
+        
+        let cornerRadiusAnimation = CABasicAnimation(keyPath: "cornerRadius")
+        cornerRadiusAnimation.toValue = self.newView.layer.frame.width/2
+
+        newView.layer.add(positionXAnimation, forKey: nil)
+        newView.layer.add(positionYAnimation, forKey: nil)
+         newView.layer.add(cornerRadiusAnimation, forKey: nil)
+
     
         CATransaction.commit()
         

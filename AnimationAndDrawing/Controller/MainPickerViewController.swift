@@ -55,6 +55,7 @@ class MainPickerViewController: UIViewController, UIPickerViewDelegate, UIPicker
             case PickerData.animationWithDuration.rawValue:
                     let vc = storyboard?.instantiateViewController(withIdentifier: "AnimationWithDurationVC") as! AnimationWithDurationVC
                              vc.modalPresentationStyle = .fullScreen
+                             vc.modalTransitionStyle = .crossDissolve
                              present(vc, animated: true, completion: nil)
                              break
             
@@ -63,6 +64,7 @@ class MainPickerViewController: UIViewController, UIPickerViewDelegate, UIPicker
             case PickerData.propertyAnimations.rawValue:
                     let vc = storyboard?.instantiateViewController(withIdentifier: "PropertyAnimationsVC") as! PropertyAnimationsVC
                              vc.modalPresentationStyle = .fullScreen
+                            vc.modalTransitionStyle = .flipHorizontal
                              present(vc, animated: true, completion: nil)
                              break
             
@@ -76,18 +78,21 @@ class MainPickerViewController: UIViewController, UIPickerViewDelegate, UIPicker
             case PickerData.caBasicAnimations.rawValue:
                             let vc = storyboard?.instantiateViewController(withIdentifier: "CABasicAnimationsVC") as! CABasicAnimationsVC
                                     vc.modalPresentationStyle = .fullScreen
+                              vc.modalTransitionStyle = .flipHorizontal
                                     present(vc, animated: true, completion: nil)
                                     break
             
             case PickerData.caKeyFrameAnimations.rawValue:
                             let vc = storyboard?.instantiateViewController(withIdentifier: "CAKeyFrameAnimationsVC") as! CAKeyFrameAnimationsVC
                                     vc.modalPresentationStyle = .fullScreen
+                                    vc.modalTransitionStyle = .coverVertical
                                     present(vc, animated: true, completion: nil)
                                     break
             
             case PickerData.caTransaction.rawValue:
                                let vc = storyboard?.instantiateViewController(withIdentifier: "CATransactionVC") as! CATransactionVC
                                         vc.modalPresentationStyle = .fullScreen
+                              
                                         present(vc, animated: true, completion: nil)
                                         break
             
