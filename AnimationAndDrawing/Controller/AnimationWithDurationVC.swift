@@ -14,6 +14,12 @@ import UIKit
 // model layer(in progress hiden), presentation layer(in progress visible) after animation
 // changed property will be in the new state after animaion finish
 
+//Animation with duration is CABasicAnimation behind the scene. higher level api
+//changing more than one property - CATransaction
+
+
+
+
 class AnimationWithDurationVC: UIViewController {
 
     @IBOutlet weak var viewToAnimate: UIView!
