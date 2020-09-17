@@ -10,6 +10,8 @@
 		AA118C5324F0F9A0001661BA /* PickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA118C5224F0F9A0001661BA /* PickerData.swift */; };
 		AA42A1A925133E4400D56855 /* CASpringAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42A1A825133E4400D56855 /* CASpringAnimationVC.swift */; };
 		AA42A1AB25133EAF00D56855 /* SpeedometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42A1AA25133EAF00D56855 /* SpeedometerView.swift */; };
+		AA42A1AD25137C7000D56855 /* CustomTimingFunctionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42A1AC25137C7000D56855 /* CustomTimingFunctionsVC.swift */; };
+		AA42A1AF251385CD00D56855 /* PathAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42A1AE251385CD00D56855 /* PathAnimationVC.swift */; };
 		AA50D16424F1460100303BCC /* AnimationWithDurationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50D16324F1460100303BCC /* AnimationWithDurationVC.swift */; };
 		AA60D0AE24FE88C2001227B4 /* CATransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA60D0AD24FE88C2001227B4 /* CATransactionVC.swift */; };
 		AA68718524F1099400F4257E /* notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA68718424F1099400F4257E /* notes.swift */; };
@@ -29,6 +31,8 @@
 		AA118C5224F0F9A0001661BA /* PickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerData.swift; sourceTree = "<group>"; };
 		AA42A1A825133E4400D56855 /* CASpringAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASpringAnimationVC.swift; sourceTree = "<group>"; };
 		AA42A1AA25133EAF00D56855 /* SpeedometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedometerView.swift; sourceTree = "<group>"; };
+		AA42A1AC25137C7000D56855 /* CustomTimingFunctionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimingFunctionsVC.swift; sourceTree = "<group>"; };
+		AA42A1AE251385CD00D56855 /* PathAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathAnimationVC.swift; sourceTree = "<group>"; };
 		AA50D16324F1460100303BCC /* AnimationWithDurationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationWithDurationVC.swift; sourceTree = "<group>"; };
 		AA60D0AD24FE88C2001227B4 /* CATransactionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATransactionVC.swift; sourceTree = "<group>"; };
 		AA68718424F1099400F4257E /* notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notes.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				AAADC1A824F54DC200B62136 /* CAKeyFrameAnimationsVC.swift */,
 				AA60D0AD24FE88C2001227B4 /* CATransactionVC.swift */,
 				AA42A1A825133E4400D56855 /* CASpringAnimationVC.swift */,
+				AA42A1AC25137C7000D56855 /* CustomTimingFunctionsVC.swift */,
+				AA42A1AE251385CD00D56855 /* PathAnimationVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -208,11 +214,13 @@
 				AA60D0AE24FE88C2001227B4 /* CATransactionVC.swift in Sources */,
 				AA50D16424F1460100303BCC /* AnimationWithDurationVC.swift in Sources */,
 				AA91FFC524F03711000310FA /* AppDelegate.swift in Sources */,
+				AA42A1AF251385CD00D56855 /* PathAnimationVC.swift in Sources */,
 				AA42A1AB25133EAF00D56855 /* SpeedometerView.swift in Sources */,
 				AA68718524F1099400F4257E /* notes.swift in Sources */,
 				AAADC1A924F54DC200B62136 /* CAKeyFrameAnimationsVC.swift in Sources */,
 				AAADC1A524F404C300B62136 /* PropertyAnimationsVC.swift in Sources */,
 				AA91FFC724F03711000310FA /* SceneDelegate.swift in Sources */,
+				AA42A1AD25137C7000D56855 /* CustomTimingFunctionsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

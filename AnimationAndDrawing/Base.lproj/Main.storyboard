@@ -287,18 +287,6 @@
                                     <action selector="backButtonPressed:" destination="iDk-YR-taB" eventType="touchUpInside" id="YVa-5Q-EkK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbT-5w-QZJ">
-                                <rect key="frame" x="20" y="676" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="GRc-D4-geg"/>
-                                    <constraint firstAttribute="height" constant="40" id="NZP-9v-04x"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="arrow.right" catalog="system"/>
-                                <connections>
-                                    <action selector="rightArrowButtonPressed:" destination="iDk-YR-taB" eventType="touchUpInside" id="fOR-DJ-0Ed"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ph2-bP-omT">
                                 <rect key="frame" x="0.0" y="348" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.82156306205035967" green="0.16428698412024414" blue="0.50315688455485408" alpha="0.67911963105726869" colorSpace="custom" customColorSpace="sRGB"/>
@@ -368,9 +356,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ha3-oO-gnH" firstAttribute="leading" secondItem="d33-VP-emS" secondAttribute="leading" constant="20" id="4JG-F6-Qqs"/>
-                            <constraint firstItem="pbT-5w-QZJ" firstAttribute="leading" secondItem="d33-VP-emS" secondAttribute="leading" constant="20" id="EFt-U3-SFI"/>
                             <constraint firstItem="cjk-fT-RcW" firstAttribute="top" secondItem="d33-VP-emS" secondAttribute="top" constant="20" id="Ece-AI-ajC"/>
-                            <constraint firstItem="d33-VP-emS" firstAttribute="bottom" secondItem="pbT-5w-QZJ" secondAttribute="bottom" constant="20" id="Ek9-lf-v7U"/>
                             <constraint firstItem="cjk-fT-RcW" firstAttribute="leading" secondItem="d33-VP-emS" secondAttribute="leading" constant="20" id="KKq-1u-PA1"/>
                             <constraint firstItem="d33-VP-emS" firstAttribute="trailing" secondItem="VOj-Vw-9wU" secondAttribute="trailing" constant="20" id="Mvb-kZ-ZD7"/>
                             <constraint firstItem="Ph2-bP-omT" firstAttribute="leading" secondItem="arg-rg-CXp" secondAttribute="leading" id="RqG-Z4-g9V"/>
@@ -452,6 +438,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Dn-cl-UMJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2559.4202898550725" y="782.60869565217399"/>
+        </scene>
+        <!--Path AnimationVC-->
+        <scene sceneID="R99-Mv-v2m">
+            <objects>
+                <viewController storyboardIdentifier="PathAnimationVC" id="7rH-16-V4k" customClass="PathAnimationVC" customModule="AnimationAndDrawing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Yd-fm-NLc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ey0-iy-ToZ">
+                                <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="ffl-nH-vPd"/>
+                                    <constraint firstAttribute="height" constant="40" id="kbd-37-8Pr"/>
+                                </constraints>
+                                <color key="tintColor" red="0.086597909170000001" green="0.0603687735" blue="0.03859420324" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="7rH-16-V4k" eventType="touchUpInside" id="uSj-Au-jwt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ey0-iy-ToZ" firstAttribute="top" secondItem="aZ2-KM-0Ty" secondAttribute="top" constant="20" id="14m-wG-7TF"/>
+                            <constraint firstItem="Ey0-iy-ToZ" firstAttribute="leading" secondItem="aZ2-KM-0Ty" secondAttribute="leading" constant="20" id="Mna-IN-to7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aZ2-KM-0Ty"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nkc-I5-yDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1896" y="115"/>
         </scene>
         <!--TransactionVC-->
         <scene sceneID="OtA-9U-wKR">

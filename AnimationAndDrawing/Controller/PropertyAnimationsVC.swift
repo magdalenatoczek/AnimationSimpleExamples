@@ -165,13 +165,7 @@ class PropertyAnimationsVC: UIViewController {
       }
     
    
-    @IBAction func rightArrowButtonPressed(_ sender: Any) {
-        setUpGoRightAnimation()
-        animator.startAnimation()
-        
-    }
-    
-    
+
     
     
     @IBAction func resetButtonPressed(_ sender: Any) {

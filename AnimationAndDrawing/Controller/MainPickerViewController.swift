@@ -59,7 +59,11 @@ class MainPickerViewController: UIViewController, UIPickerViewDelegate, UIPicker
                                        present(vc, animated: true, completion: nil)
                                        break
             
-            
+            case PickerData.PathAnimation.rawValue:
+            let vc = storyboard?.instantiateViewController(withIdentifier: "PathAnimationVC") as! PathAnimationVC
+                     vc.modalPresentationStyle = .fullScreen
+                     present(vc, animated: true, completion: nil)
+                     break
             
             
             
