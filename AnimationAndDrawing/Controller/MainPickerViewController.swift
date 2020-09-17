@@ -52,10 +52,20 @@ class MainPickerViewController: UIViewController, UIPickerViewDelegate, UIPicker
         switch pickerStatus {
             
             
+            
+        case PickerData.caSpringAnimation.rawValue:
+                              let vc = storyboard?.instantiateViewController(withIdentifier: "CASpringAnimationVC") as! CASpringAnimationVC
+                                       vc.modalPresentationStyle = .fullScreen
+                                       present(vc, animated: true, completion: nil)
+                                       break
+            
+            
+            
+            
+            
             case PickerData.animationWithDuration.rawValue:
                     let vc = storyboard?.instantiateViewController(withIdentifier: "AnimationWithDurationVC") as! AnimationWithDurationVC
                              vc.modalPresentationStyle = .fullScreen
-                             vc.modalTransitionStyle = .crossDissolve
                              present(vc, animated: true, completion: nil)
                              break
             
@@ -92,7 +102,6 @@ class MainPickerViewController: UIViewController, UIPickerViewDelegate, UIPicker
             case PickerData.caTransaction.rawValue:
                                let vc = storyboard?.instantiateViewController(withIdentifier: "CATransactionVC") as! CATransactionVC
                                         vc.modalPresentationStyle = .fullScreen
-                              
                                         present(vc, animated: true, completion: nil)
                                         break
             
