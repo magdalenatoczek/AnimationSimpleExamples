@@ -25,6 +25,7 @@
 		AAADC1A524F404C300B62136 /* PropertyAnimationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAADC1A424F404C300B62136 /* PropertyAnimationsVC.swift */; };
 		AAADC1A724F54DAE00B62136 /* CABasicAnimationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAADC1A624F54DAE00B62136 /* CABasicAnimationsVC.swift */; };
 		AAADC1A924F54DC200B62136 /* CAKeyFrameAnimationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAADC1A824F54DC200B62136 /* CAKeyFrameAnimationsVC.swift */; };
+		AAC743DB2513AE450085AFDD /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC743DA2513AE450085AFDD /* ProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		AAADC1A424F404C300B62136 /* PropertyAnimationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnimationsVC.swift; sourceTree = "<group>"; };
 		AAADC1A624F54DAE00B62136 /* CABasicAnimationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CABasicAnimationsVC.swift; sourceTree = "<group>"; };
 		AAADC1A824F54DC200B62136 /* CAKeyFrameAnimationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAKeyFrameAnimationsVC.swift; sourceTree = "<group>"; };
+		AAC743DA2513AE450085AFDD /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				AA42A1AA25133EAF00D56855 /* SpeedometerView.swift */,
+				AAC743DA2513AE450085AFDD /* ProgressView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				AA68718524F1099400F4257E /* notes.swift in Sources */,
 				AAADC1A924F54DC200B62136 /* CAKeyFrameAnimationsVC.swift in Sources */,
 				AAADC1A524F404C300B62136 /* PropertyAnimationsVC.swift in Sources */,
+				AAC743DB2513AE450085AFDD /* ProgressView.swift in Sources */,
 				AA91FFC724F03711000310FA /* SceneDelegate.swift in Sources */,
 				AA42A1AD25137C7000D56855 /* CustomTimingFunctionsVC.swift in Sources */,
 			);

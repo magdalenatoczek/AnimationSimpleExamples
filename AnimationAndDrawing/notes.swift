@@ -23,20 +23,31 @@ class ExampleClassForNotes: UIViewController {
     }()
 
     
+ 
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
         setUpStandaloneLayer()
+       
 
     }
+    
+
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         standaloneLayer.frame = view.bounds
     }
+  
+    
+    
     
     
     
@@ -56,7 +67,6 @@ class ExampleClassForNotes: UIViewController {
         standaloneLayer.contents = UIImage(named: "rabbitL")?.cgImage
         standaloneLayer.contentsGravity = CALayerContentsGravity.center //prevent resizing to fit
         standaloneLayer.masksToBounds = true   //shadow will dissapear -> //use smaller image
-        
         view.layer.addSublayer(standaloneLayer)
         
     }
@@ -65,22 +75,14 @@ class ExampleClassForNotes: UIViewController {
         //same method highier level and lower level
           view.backgroundColor = UIColor.black
           view.layer.backgroundColor = UIColor.black.cgColor
-              
-          
           view.layer.cornerRadius = CGFloat(10.0)
           view.layer.borderColor = UIColor.red.cgColor
           view.layer.borderWidth = CGFloat(5.0)
-              
-              
           view.layer.shadowOpacity = 0.7 //(float 0-1)
           view.layer.shadowRadius = CGFloat(15.0)
           view.layer.shadowOffset = CGSize(width: CGFloat(-15), height: CGFloat(15))
-              
           view.layer.shadowOffset = CGSize.zero
-              
-              
           view.layer.contents = UIImage(named: "rabbitL")?.cgImage
-              
           view.layer.contentsGravity = CALayerContentsGravity.center //prevent resizing to fit
           view.layer.masksToBounds = true   //shadow will dissapear -> //use smaller image
     }

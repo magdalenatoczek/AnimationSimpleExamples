@@ -11,6 +11,12 @@ import UIKit
 class PathAnimationVC: UIViewController {
 
     
+   
+    @IBOutlet weak var progressView: ProgressView!
+    
+    var startTime: Double = 0.0
+    let animLength: Double = 4.0
+    
     let sunView = UIView()
     let planetView = UIView()
     let sunSize: CGFloat = 120
@@ -20,7 +26,7 @@ class PathAnimationVC: UIViewController {
         return view.frame.height / 2
     }
     
-    
+    var displayLink: CADisplayLink?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,9 +44,39 @@ class PathAnimationVC: UIViewController {
         //or
       //  sunView.layer.contents = UIImage(named: "sunImage")?.cgImage
        view.addSubview(sunView)
+        
+        
+        
+        
+        //=================CADisplayLink
+    startTime = CACurrentMediaTime()
+    displayLink = CADisplayLink(target: self, selector: #selector(loop))
+    displayLink?.add(to: .main, forMode: .default)
+        
   
         
     }
+    
+    @objc func loop(){
+
+        var elapsed =  CACurrentMediaTime() - startTime
+        let currentProgress = elapsed / animLength
+        progressView.currentProgress = currentProgress
+        
+        if elapsed > animLength {
+            
+            elapsed = animLength
+            displayLink?.invalidate()
+            displayLink = nil
+            
+        }
+        
+
+    }
+    
+    
+    
+    
     
     
     override func viewDidAppear(_ animated: Bool) {
@@ -58,7 +94,7 @@ class PathAnimationVC: UIViewController {
         
         planetView.layer.add(orbitAnim, forKey: nil)
         
-        
+      
         
     }
     

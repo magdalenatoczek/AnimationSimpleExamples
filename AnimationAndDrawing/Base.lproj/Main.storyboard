@@ -459,14 +459,27 @@
                                     <action selector="backButtonPressed:" destination="7rH-16-V4k" eventType="touchUpInside" id="uSj-Au-jwt"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkK-sw-kRp" customClass="ProgressView" customModule="AnimationAndDrawing" customModuleProvider="target">
+                                <rect key="frame" x="20" y="586" width="374" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="6mN-LE-18D"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ey0-iy-ToZ" firstAttribute="top" secondItem="aZ2-KM-0Ty" secondAttribute="top" constant="20" id="14m-wG-7TF"/>
                             <constraint firstItem="Ey0-iy-ToZ" firstAttribute="leading" secondItem="aZ2-KM-0Ty" secondAttribute="leading" constant="20" id="Mna-IN-to7"/>
+                            <constraint firstItem="rkK-sw-kRp" firstAttribute="leading" secondItem="aZ2-KM-0Ty" secondAttribute="leading" constant="20" id="ogT-aB-gbl"/>
+                            <constraint firstItem="aZ2-KM-0Ty" firstAttribute="trailing" secondItem="rkK-sw-kRp" secondAttribute="trailing" constant="20" id="pdi-rh-a0M"/>
+                            <constraint firstItem="aZ2-KM-0Ty" firstAttribute="bottom" secondItem="rkK-sw-kRp" secondAttribute="bottom" constant="50" id="qS2-94-QYm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aZ2-KM-0Ty"/>
                     </view>
+                    <connections>
+                        <outlet property="progressView" destination="rkK-sw-kRp" id="zAz-fo-O7D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nkc-I5-yDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
